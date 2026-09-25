@@ -94,13 +94,13 @@ const Navbar = () => {
                                         onSubmit={handleSearchSubmit}
                                         className="flex items-center bg-white border border-gray-200 rounded-md px-3 py-2 w-72"
                                     >
-                                        <Search size={18} className="text-gray-400 mr-2" />
+                                        <Search size={18} className="text-gray-700 mr-2" />
                                         <input
                                             type="text"
                                             value={searchQuery}
                                             onChange={(e) => setSearchQuery(e.target.value)}
                                             placeholder="What Are You Looking For?"
-                                            className="w-full outline-none bg-transparent text-sm"
+                                            className="w-full outline-none bg-transparent text-sm text-gray-500"
                                         />
                                     </form>
                                     <Link to="/cart" className="relative">
@@ -163,17 +163,17 @@ const Navbar = () => {
                             onSubmit={handleSearchSubmit}
                             className="flex items-center flex-1 mx-6 bg-gray-50 border border-gray-200 rounded-md px-3 py-2"
                         >
-                            <Search size={18} className="text-gray-400 mr-2" />
+                            <Search size={18} className="text-gray-700 mr-2" />
                             <input
                                 type="text"
                                 autoFocus
                                 value={searchQuery}
                                 onChange={(e) => setSearchQuery(e.target.value)}
                                 placeholder="What Are You Looking For?"
-                                className="w-full outline-none bg-transparent text-sm"
+                                className="w-full outline-none bg-transparent text-sm text-gray-500"
                             />
                             <button type="button" onClick={closeSearch}>
-                                <X size={18} className="text-gray-400 ml-2" />
+                                <X size={18} className="text-gray-700 ml-2" />
                             </button>
                         </form>
                     )}
@@ -212,7 +212,7 @@ const Navbar = () => {
                             <button type="button" onClick={() => setIsMobileMenuOpen(true)}>
                                 <Menu size={24} className="text-gray-700" />
                             </button>
-                            <span className="text-lg font-bold tracking-wide">FreshBasket.</span>
+                            <span className="text-lg text-black font-bold tracking-wide">FreshBasket.</span>
                             <div className="flex items-center gap-4">
                                 <button type="button" onClick={() => setIsSearchOpen(true)}>
                                     <Search size={20} className="text-gray-700" />
@@ -239,14 +239,14 @@ const Navbar = () => {
                             onSubmit={handleSearchSubmit}
                             className="flex items-center w-full bg-gray-50 border border-gray-200 rounded-md px-3 py-2"
                         >
-                            <Search size={18} className="text-gray-400 mr-2" />
+                            <Search size={18} className="text-gray-700 mr-2" />
                             <input
                                 type="text"
                                 autoFocus
                                 value={searchQuery}
                                 onChange={(e) => setSearchQuery(e.target.value)}
                                 placeholder="What Are You Looking For?"
-                                className="w-full outline-none bg-transparent text-sm"
+                                className="w-full outline-none bg-transparent text-sm text-gray-500"
                             />
                             <button type="button" onClick={closeSearch}>
                                 <X size={18} className="text-gray-700 ml-2" />
