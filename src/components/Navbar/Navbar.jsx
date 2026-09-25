@@ -86,7 +86,7 @@ const Navbar = () => {
 
                         <div className="w-full bg-[#faf9f7]">
                             <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-                                <span className="text-2xl font-bold tracking-wide">
+                                <span className="text-2xl font-bold tracking-wide text-black">
                                     FreshBasket.
                                 </span>
                                 <div className="flex items-center gap-4">
@@ -128,7 +128,7 @@ const Navbar = () => {
                 <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
 
                     <span
-                        className={`text-xl font-bold tracking-wide mr-8 transition-opacity duration-300 ${isScrolled ? "opacity-100" : "opacity-0 w-0 mr-0 overflow-hidden"
+                        className={`text-xl text-black font-bold tracking-wide mr-8 transition-opacity duration-300 ${isScrolled ? "opacity-100" : "opacity-0 w-0 mr-0 overflow-hidden"
                             }`}
                     >
                         FreshBasket.
@@ -249,7 +249,7 @@ const Navbar = () => {
                                 className="w-full outline-none bg-transparent text-sm"
                             />
                             <button type="button" onClick={closeSearch}>
-                                <X size={18} className="text-gray-400 ml-2" />
+                                <X size={18} className="text-gray-700 ml-2" />
                             </button>
                         </form>
                     )}
@@ -267,9 +267,9 @@ const Navbar = () => {
                         onClick={(e) => e.stopPropagation()}
                     >
                         <div className="flex items-center justify-between mb-4">
-                            <span className="text-lg font-bold">FreshBasket.</span>
+                            <span className="text-lg font-bold text-black">FreshBasket.</span>
                             <button onClick={() => setIsMobileMenuOpen(false)}>
-                                <X size={22} />
+                                <X size={22} className="text-gray-700" />
                             </button>
                         </div>
 
