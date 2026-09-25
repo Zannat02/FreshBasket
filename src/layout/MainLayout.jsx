@@ -1,13 +1,14 @@
 import React from 'react';
 import { Outlet } from 'react-router';
 import Navbar from '../components/Navbar/Navbar';
+import Footer from '../components/footer/Footer';
 
 const MainLayout = () => {
     return (
         <div>
-           <Navbar></Navbar>
+            <Navbar />
             <Outlet />
-            <h2 className="p-4 bg-gray-100">Footer (placeholder)</h2>
+            <Footer />
         </div>
     );
 };
