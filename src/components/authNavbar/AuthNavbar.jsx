@@ -12,7 +12,7 @@ const AuthNavbar = () => {
             <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
 
                 <div className="flex items-center gap-3">
-                    {/* Hamburger — শুধু mobile/tablet এ */}
+                  
                     <button
                         type="button"
                         className="sm:hidden"
@@ -21,12 +21,12 @@ const AuthNavbar = () => {
                         <Menu size={22} className="text-gray-700" />
                     </button>
 
-                    <Link to="/" className="text-xl font-bold tracking-wide">
+                    <Link to="/" className="text-xl font-bold text-black tracking-wide">
                         FreshBasket.
                     </Link>
                 </div>
 
-                {/* Shop/Catalog — শুধু desktop এ সরাসরি দেখাবে */}
+          
                 <div className="hidden sm:flex items-center gap-6">
                     <Link to="/shop" className="text-sm text-gray-700 hover:text-green-800 transition-colors">
                         Shop
@@ -56,7 +56,7 @@ const AuthNavbar = () => {
                 </div>
             </div>
 
-            {/* Mobile/Tablet slide-in menu — শুধু Shop/Catalog এখানে থাকবে */}
+        
             {isMenuOpen && (
                 <div
                     className="sm:hidden fixed inset-0 z-50 bg-black/40"
@@ -67,7 +67,7 @@ const AuthNavbar = () => {
                         onClick={(e) => e.stopPropagation()}
                     >
                         <div className="flex items-center justify-between mb-6">
-                            <span className="text-lg font-bold">FreshBasket.</span>
+                            <span className="text-lg font-bold text-black">FreshBasket.</span>
                             <button onClick={() => setIsMenuOpen(false)}>
                                 <X size={22} />
                             </button>

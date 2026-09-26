@@ -32,7 +32,7 @@ const AuthFooter = () => {
             <hr className="border-gray-200" />
 
             <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
-                <select className="text-sm border border-gray-300 rounded-md px-2 py-1 bg-white outline-none">
+                <select className="text-sm text-black border border-gray-300 rounded-md px-2 py-1 bg-white outline-none">
                     <option>USD $</option>
                     <option>BDT ৳</option>
                 </select>
@@ -45,7 +45,7 @@ const AuthFooter = () => {
                     {paymentMethods.map((method) => (
                         <span
                             key={method}
-                            className="text-[10px] font-semibold border border-gray-300 rounded px-2 py-1 text-gray-500 bg-white"
+                            className="text-[10px] font-semibold border border-gray-300 rounded px-2 py-1 text-gray-600 bg-white"
                         >
                             {method}
                         </span>
